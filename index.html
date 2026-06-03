@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="loader"></div>
+
+<div id="content">
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <h2 class="logo">JobHub</h2>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Companies</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+   <button class="login-btn" onclick="openLogin()">Login</button>
+<button class="dark-btn" onclick="darkMode()">🌙 Dark Mode</button>
+</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find Your Dream Job</h1>
+        <p>Search thousands of jobs from top companies.</p>
+
+        <button>Explore Jobs</button>
+    </section>
+    <!-- Statistics Section -->
+<section class="stats-section">
+
+    <div class="stat-box">
+        <h2>5000+</h2>
+        <p>Jobs Posted</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>1200+</h2>
+        <p>Companies</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>8000+</h2>
+        <p>Job Seekers</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>95%</h2>
+        <p>Success Rate</p>
+    </div>
+
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials">
+
+    <h2>What Our Users Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>"I found my dream job within two weeks using JobHub!"</p>
+            <h4>- Rahul Kumar</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"The platform is easy to use and has many opportunities."</p>
+            <h4>- Priya Sharma</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"I received multiple interview calls after applying here."</p>
+            <h4>- Ankit Verma</h4>
+        </div>
+
+    </div>
+
+</section>
+<!-- Company Showcase Section -->
+<section class="companies-section">
+
+    <h2>Top Companies Hiring</h2>
+
+    <div class="companies-container">
+
+        <div class="company-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Google">
+            <h3>Google</h3>
+        </div>
+
+        <div class="company-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="Microsoft">
+            <h3>Microsoft</h3>
+        </div>
+
+        <div class="company-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Amazon">
+            <h3>Amazon</h3>
+        </div>
+
+        <div class="company-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Meta">
+            <h3>Meta</h3>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h2>Search Jobs</h2>
+
+        <div class="search-box">
+            <input type="text" placeholder="Job Title">
+
+            <input type="text" placeholder="Location">
+
+            <button>Search</button>
+        </div>
+
+    </section>
+    <!-- Application Form -->
+<section class="apply-section">
+
+    <h2>Apply for a Job</h2>
+
+    <form class="apply-form">
+
+    <input type="text" placeholder="Full Name" required>
+
+    <input type="email" placeholder="Email Address" required>
+
+    <input type="text" placeholder="Job Position" required>
+
+    <textarea placeholder="Why should we hire you?" rows="5"></textarea>
+
+    <label>Upload Resume</label>
+
+    <input type="file" accept=".pdf,.doc,.docx">
+
+    <button type="submit">Submit Application</button>
+
+</form>
+</section>
+    <!-- Login Popup -->
+<div class="login-popup" id="loginPopup">
+
+    <div class="login-box">
+        <span class="close-btn" onclick="closeLogin()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Enter Email">
+
+        <input type="password" placeholder="Enter Password">
+
+        <button>Login</button>
+    </div>
+
+</div>
+<!-- FAQ Section -->
+<section class="faq-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>How do I apply for a job?</h3>
+        <p>Browse available jobs and click the Apply Now button.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is JobHub free to use?</h3>
+        <p>Yes, job seekers can search and apply for jobs free of charge.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I upload my resume?</h3>
+        <p>Yes, use the application form to upload your resume.</p>
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section class="contact-section">
+
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+
+    <h2>Subscribe to Job Alerts</h2>
+
+    <p>Get the latest job opportunities directly in your inbox.</p>
+
+    <div class="newsletter-box">
+        <input type="email" placeholder="Enter your email">
+
+        <button>Subscribe</button>
+    </div>
+
+</section>
+    <footer>
+    <p>© 2026 JobHub | All Rights Reserved</p>
+</footer>
+<button id="topBtn" onclick="topFunction()">⬆ Top</button>
+</div>
+    <script src="script.js"></script>
+    <!-- Job Listings -->
+<section class="jobs-section">
+
+    <h2>Featured Jobs</h2>
+
+    <div class="job-container">
+
+        <div class="job-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Company Logo">
+
+    <h3>Software Engineer</h3>
+
+    <p>Company: Tech Solutions</p>
+
+    <p>Location: Hyderabad</p>
+
+    <button onclick="applyJob()">Apply Now</button>
+
+    <button class="save-btn" onclick="saveJob()">Save Job</button>
+
+</div>
+        <div class="job-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Company Logo">
+            <h3>Web Developer</h3>
+            <p>Company: WebTech</p>
+            <p>Location: Bangalore</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Company Logo">
+            <h3>Data Analyst</h3>
+            <p>Company: DataCorp</p>
+            <p>Location: Pune</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Company Logo">
+            <h3>UI/UX Designer</h3>
+            <p>Company: Creative Studio</p>
+            <p>Location: Chennai</p>
+            <button>Apply Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
